@@ -13,17 +13,17 @@ jsDelivr's GitHub CDN endpoint and keep the version pinned.
 Whole files — one WOFF2 per weight/style:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup@v2026.10.19/css/levelup.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup@v2026.10.21/css/levelup.css">
 ```
 
 Sliced — the same faces cut into unicode-range pieces, so the browser
 downloads only the pieces the page's text uses:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup@v2026.10.19/css/levelup-subset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup@v2026.10.21/css/levelup-subset.css">
 ```
 
-Without the `@v2026.10.19` tag the URL follows the latest release
+Without the `@v2026.10.21` tag the URL follows the latest release
 (`https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup/css/levelup.css`). Pin the tag in production.
 
 Direct WOFF2 example:
@@ -31,7 +31,7 @@ Direct WOFF2 example:
 ```css
 @font-face {
   font-family: "LevelUp";
-  src: url("https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup@v2026.10.19/woff2/LevelUp-Regular.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/hada0127/hada-type-levelup@v2026.10.21/woff2/LevelUp-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -46,12 +46,13 @@ Direct WOFF2 example:
 
 ## Packages
 
-TTF, OTF and WOFF2 ZIPs are attached to the GitHub release:
+TTF, OTF, WOFF2 and sliced WOFF2 ZIPs are attached to the GitHub release:
 
-[LevelUp-TTF.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.19/LevelUp-TTF.zip) · [LevelUp-OTF.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.19/LevelUp-OTF.zip) · [LevelUp-WOFF2.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.19/LevelUp-WOFF2.zip)
+[LevelUp-TTF.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.21/LevelUp-TTF.zip) · [LevelUp-OTF.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.21/LevelUp-OTF.zip) · [LevelUp-WOFF2.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.21/LevelUp-WOFF2.zip) · [LevelUp-WOFF2-Subset.zip](https://github.com/hada0127/hada-type-levelup/releases/download/v2026.10.21/LevelUp-WOFF2-Subset.zip)
 
 Each ZIP includes `WEBFONT-USAGE.txt`, `LICENSE.txt` and `COPYRIGHT.txt`.
-The WOFF2 ZIP also includes `WEBFONT.css` for self-hosted use.
+The WOFF2 ZIP also includes `WEBFONT.css` for self-hosted use; the sliced
+ZIP carries `woff2-subset/` with `WEBFONT-SUBSET.css` (relative URLs).
 
 ## Other Hada Type families
 

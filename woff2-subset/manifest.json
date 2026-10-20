@@ -4426,9 +4426,9 @@
   "order_sha256": "72a13d677f617effa5e23b02358994a44f7dd84df82e1300e470fec8cbef67d5",
   "toolchain": {
     "brotli": "1.2.0",
-    "fonttools": "4.67.0",
+    "fonttools": "4.66.1",
     "ots": "9.2.0",
-    "python": "3.14.7",
+    "python": "3.12.15",
     "script": 1
   },
   "version": 1
